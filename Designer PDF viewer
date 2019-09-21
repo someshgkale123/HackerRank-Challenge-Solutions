@@ -9,7 +9,7 @@ Solution:
 	def designerPdfViewer(h, word):
     		numbers = [h[(ord(i)-96)-1] for i in word]
     		return(max(numbers)*len(numbers)) 
-  h = list(map(int, input().split()))
-  word = input()
-  result = designerPdfViewer(h, word)
+  	h = list(map(int, input().split()))
+  	word = input()
+  	result = designerPdfViewer(h, word)
  	print(result)
