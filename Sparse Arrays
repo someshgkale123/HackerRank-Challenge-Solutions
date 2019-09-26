@@ -1,0 +1,25 @@
+
+Problem statement:
+
+There is a collection of input strings and a collection of query strings. For each query string, determine how many times it occurs in the list of input strings.
+For example, given input strings=['ab','ab','abc'] and queries=['ab','abc','bc'], we find 2 instances of 'ab', 1 of 'abc' and 0 of 'bc'. 
+For each query, we add an element to our return array, results=[2,1,0].
+
+Solution:
+
+def matchingStrings(strings, queries):
+    for i in queries:
+        print(strings.count(i))
+
+
+strings_count = int(input())
+strings = []
+for _ in range(strings_count):
+    strings.append(input())
+
+queries_count = int(input())
+queries = []
+for _ in range(queries_count):
+    queries.append(input())
+
+res = matchingStrings(strings, queries)
