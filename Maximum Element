@@ -1,0 +1,20 @@
+Problem Statement:
+
+You have an empty sequence, and you will be given N queries. Each query is one of these three types:
+
+1 x  -Push the element x into the stack.
+2    -Delete the element present at the top of the stack.
+3    -Print the maximum element in the stack.
+
+Solution:
+
+n=int(input())
+li=[0]
+for i in range(n):
+    i=list(map(int,input().split()))
+    if i[0]==1:
+        li.append(max(i[1],li[-1]))
+    elif i[0]==2:
+        li.pop()
+    elif i[0]==3:
+        print(li[-1])
