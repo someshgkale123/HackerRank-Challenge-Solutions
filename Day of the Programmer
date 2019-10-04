@@ -24,3 +24,4 @@ def dayOfProgrammer(year):
 year = int(input().strip())
 result = dayOfProgrammer(year)
 print(result)
+ 
