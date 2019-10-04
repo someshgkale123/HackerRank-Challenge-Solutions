@@ -32,3 +32,4 @@ result = circularArrayRotation(a, k, queries)
 print('\n'.join(map(str, result)))
 
 
+ 
