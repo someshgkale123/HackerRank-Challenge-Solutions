@@ -21,3 +21,4 @@ def beautifulDays(i, j, k):
 i,j,k = map(int,input().split())
 result = beautifulDays(i, j, k)
 print(result)
+ 
