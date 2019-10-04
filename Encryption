@@ -1,0 +1,31 @@
+Problem Statment:
+
+An English text needs to be encrypted using the following encryption scheme. First, the spaces are removed from the text. Let L be the length of this text.
+Then, characters are written into a grid, whose rows and columns have the following constraints:
+
+For example, the sentence 
+s= if man was meant to stay on the ground god would have given us roots, after removing spaces is 54 characters long. sqrt(54) is between 7 and 8, so it is written in the form of a grid with 7 rows and 8 columns.
+
+ifmanwas  
+meanttos          
+tayonthe  
+groundgo  
+dwouldha  
+vegivenu  
+sroots
+
+
+Solution:
+
+import math
+def encryption(s):
+    row=math.floor(math.sqrt(len(s)))
+    column=math.ceil(math.sqrt(len(s)))
+    stri=""
+    for i in range(row+1):
+        stri+=(s[i::column])+" "
+    return(stri)
+
+s = input()
+result = encryption(s)
+print(result)
