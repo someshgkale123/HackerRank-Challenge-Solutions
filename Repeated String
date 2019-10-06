@@ -18,3 +18,4 @@ n = int(input())
 result = repeatedString(s, n)
 print(result)
 
+ 
