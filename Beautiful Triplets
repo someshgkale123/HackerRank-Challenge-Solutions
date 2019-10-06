@@ -1,0 +1,23 @@
+Problem Statement:
+
+Given a sequence of integers a, a triplet (a[i],a[j],a[k]) is beautiful if:
+-> i < j < k
+-> a[j] - a[i] = a[k] - a[j] = d
+Given an increasing sequence of integers and the value of d, count the number of beautiful triplets in the sequence.
+For example, the sequence arr=[2,2,3,4,5] and d=1. There are three beautiful triplets, by index: [i,j,k]=[0,2,3],[1,2,3],[2,3,4]. 
+To test the first triplet, arr[j] - arr[i] = 3 - 2 = 1 and arr[k] - arr[j] = 4 - 3 = 1.
+
+
+Solution:
+
+def beautifulTriplets(d, arr):
+    cnt=0
+    for i in range(len(arr)):
+        if arr[i]+d in arr and arr[i]+2*d in arr:
+            cnt+=1
+    return(cnt)
+
+n,d = map(int,input().split())
+arr = list(map(int, input().rstrip().split()))
+result = beautifulTriplets(d, arr)
+print(result)
