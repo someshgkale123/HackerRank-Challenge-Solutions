@@ -14,7 +14,7 @@ Given the initial value of grade for each of Sam's n students, write code to aut
 
 Solution:
 
-def gradingStudents(grades):
+def gradingStudents(grades): 
     # Write your code here
     Rounded=[]
     for i in grades:
