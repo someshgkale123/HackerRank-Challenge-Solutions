@@ -14,7 +14,7 @@ def viralAdvertising(n):
     for i in range(n-1):
         cnt+=(number*3)//2
         number=(number*3)//2
-    return(cnt)
+    return(cnt) 
 
 n = int(input())
 result = viralAdvertising(n)
