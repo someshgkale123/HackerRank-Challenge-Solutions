@@ -23,3 +23,4 @@ for _ in range(queries_count):
     queries.append(input())
 
 res = matchingStrings(strings, queries)
+ 
