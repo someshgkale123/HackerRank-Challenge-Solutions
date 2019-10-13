@@ -10,7 +10,6 @@ For example, s=oneTwoThree. There are 3 words in the string.
 
 Solution:
 
-
 def camelcase(s):
     cnt=1
     for i in s:
