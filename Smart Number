@@ -1,0 +1,25 @@
+Problem Statement:
+
+A number is called a smart number if it has an odd number of factors. Given some numbers, find whether they are smart numbers or not.
+Debug the given function is_smart_number to correctly check if a given number is a smart number.
+
+
+Solution:
+
+import math
+def is_smart_number(num):
+    val = int(math.sqrt(num))
+    if num / val == val:
+        return True
+    return False
+
+for _ in range(int(raw_input())):
+    num = int(raw_input())
+    ans = is_smart_number(num)
+    if ans:
+        print "YES"
+    else:
+        print "NO"
+
+
+
